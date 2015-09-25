@@ -1,10 +1,10 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<time.h>
-int getRandomNumber()
+int getRandomNumber()//to get random dice value
 {
 int num;
-srand(time(NULL));
+srand(time(NULL));//to take current time  as seed
 num=rand();
 num=(num%6)+1;
 return num;
